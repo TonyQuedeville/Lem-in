@@ -1,0 +1,18 @@
+4 // nb fourmis
+##start
+0 0 3 // salle de depart : nom, coordx, coordy
+2 2 5 // salle : nom, coordx, coordy
+3 4 0 // salle : nom, coordx, coordy
+##end
+1 8 3 // salle d'arrivée : nom, coordx, coordy
+0-2 // lien entre salles (tunel)
+2-3 // lien entre salles (tunel)
+3-1 // lien entre salles (tunel)
+
+Resultat attendu: (en 6 étapes pour cette example)
+L1-2 // L num fourmis - nom salle
+L1-3 L2-2
+L1-1 L2-3 L3-2
+L2-1 L3-3 L4-2
+L3-1 L4-3
+L4-1

@@ -1,0 +1,85 @@
+/*
+    Tony Quedeville : tquedevi
+    Zone01: Projet Lem-in
+    06-01-2023
+    */
+
+// Header, Nav, Footer
+@mixin navfoot
+    width: 99.4%
+    max-height: 75px
+    margin: 5px 5px 
+    background: $fondNavFoot
+    box-shadow: $shadow
+    border: $borderWhite
+    border-radius: $radius
+    
+    display: flex
+    justify-content: space-around
+    align-items: center 
+    position: fixed
+    color: $white
+
+@mixin input
+    width: 100%
+    height: 30px
+    margin: 10px 10px  
+    background: $fondElement
+    box-shadow: $shadow
+    border: $borderWhite
+    border-radius: $radius
+    font-family: Bookman Old Style
+
+    &:hover
+        background: $fondElementHoover
+        box-shadow: $light
+        cursor: pointer
+
+@mixin buttonSelect
+    display: flex
+    justify-content: center
+    align-items: center
+    color: $white
+
+    margin: 10px 10px  
+    padding: 10px 10px  
+    background: $fondElement
+    box-shadow: $shadow
+    border: $borderWhite
+    border-radius: $radius
+
+    &:hover
+        background: $fondElementHoover
+        box-shadow: $light
+        cursor: pointer
+
+@mixin spaceGraph
+    width: 67vw
+    height: 86vh
+    margin: 5px 5px
+    background: $fondContainer
+    border: $borderWhite
+    border-radius: $radius
+    box-shadow: $shadow
+
+@mixin spaceResult
+    width: 80vw
+    height: 86vh
+    margin: 5px 5px
+    background: $fondContainer
+    border: $borderWhite
+    border-radius: $radius
+    box-shadow: $shadow
+    
+    display: flex
+    justify-content: space-between
+    align-items: center
+
+@mixin result
+    overflow: auto
+    width: 29vw
+    height: 40vh
+    padding: 10px 10px
+    border-radius: $radius
+    border: solid 1px $white
+    box-shadow: $light

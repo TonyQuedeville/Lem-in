@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8">
+    <title>Lem-in</title>
+    <link rel="icon" type="image/png" href="../static/icn/icn-STS.png"/>
+    <link rel="stylesheet" href="../static/css/style.css">
+</head>
+
+<body>
+    <!-- Entête -->
+    <nav>
+        <div class="horizontal">
+            <h3>Lem-in</h3>
+            
+        </div>
+    </nav>  
+    <!----> 
+
+    <main>
+        <div id="farm" class="spaceGraph vertical">
+            <canvas id="canvas" width="1436" height="820"></canvas>
+        </div>
+
+        <div class="spaceResult vertical center"> 
+            <div class="horizontal">
+                <h3 id="example"></h3>
+            </div>           
+
+            <div class="horizontal center">
+                <h4>Number Ants : </h4>
+                <h4 id="NbAnt"></h4>
+                
+            </div>
+
+            <div>
+                <h5 id="nbPath"></h5>
+                <div id="listPath" class="listPath vertical"></div>
+            </div>
+
+            <div class="horizontal center">
+                <h4>Step : </h4>
+                <h4 id="NbStep"></h4>
+                <a href="./" name="refresh">
+                    <button name="refresh"><h5> Step by step </h5></button>
+                </a>
+            </div>
+
+            <div>
+                <div id="result" class="result vertical"></div>
+            </div>
+        </div>
+    </main>
+    
+    <!-- Pied de page -->
+    <footer>
+        <h6>Zone01 - Tony Quedeville : tquedevi</h6>
+        <h6>Projet Lem-in : 05/01/2023</h6>
+        <a href="https://zone01normandie.org/git/tquedevi/lem-in" class="infobulle anim" target="_blank" aria-label="Gitea Zone01: lem-in" alt="Lien vers Gitea">
+            <div class="logo">
+                <img src="../static/icn/icn-STS-blanc.png" width="25" height="25" alt="Logo STS">
+            </div>
+        </a>
+    </footer>
+    <!----> 
+
+    <!-- Script JS -->                
+    <script src="../static/js/connexion.js"></script>
+    <script src="../static/js/class.js"></script>
+    <script src="../static/js/farm.js"></script>
+    <!----> 
+</body>
+
+</html>

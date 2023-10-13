@@ -1,0 +1,55 @@
+/*
+    Tony Quedeville : tquedevi
+    Zone01: Projet Lem-in
+    06-01-2023
+    */
+
+/* room: dégradé radial */
+.room
+    width: $sizeRoom
+    height: $sizeRoom
+    border-radius: $rond
+    position: absolute 
+    background: $fondRoom
+    box-shadow: $shadow
+    color: $white
+    transform: translate($decalRoom, $decalRoom)
+    font-size: nth($fontSizes, 5)
+
+    display: flex
+    align-items: center
+    justify-content: center
+
+.type-start
+    background: $fondRoomStart
+
+.type-end
+    background: $fondRoomEnd
+
+.ant
+    width: $sizeAnt
+    height: $sizeAnt
+    border-radius: $rond
+    position: absolute 
+    background: $fondAnt
+    color: $white
+    transform: translate($decalAnt, $decalAnt)
+    font-size: nth($fontSizes, 6)
+
+    display: flex
+    align-items: center
+    justify-content: center
+
+.result
+    @include result        
+
+.listPath
+    @include result    
+    height: 10vh
+
+.step
+    color: $white
+
+.activeStep
+    color: $yellow
+    box-shadow: $light
